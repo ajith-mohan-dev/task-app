@@ -22,6 +22,7 @@ import {
 } from 'react-native-table-component';
 import ToastMsg from '../../components/ToastMsg';
 import styles from './styles';
+import {LOCAL_STRING} from '../../config/local-string';
 
 type IInputState = {
   tabelName: string;
@@ -146,7 +147,9 @@ const UseCaseOneScreen: React.FC = () => {
               <TouchableOpacity
                 style={styles.buttonContainer}
                 onPress={manualUpdateHandler}>
-                <Text style={styles.buttonText}>Manual Update</Text>
+                <Text style={styles.buttonText}>
+                  {LOCAL_STRING.ManualUpadte}
+                </Text>
               </TouchableOpacity>
             </View>
             <KeyboardAvoidingView style={{flex: 1}}>
@@ -189,7 +192,9 @@ const UseCaseOneScreen: React.FC = () => {
                     <TouchableOpacity
                       style={styles.buttonContainer}
                       onPress={onUpdatePress}>
-                      <Text style={styles.buttonText}>Update</Text>
+                      <Text style={styles.buttonText}>
+                        {LOCAL_STRING.Update}
+                      </Text>
                     </TouchableOpacity>
                   </View>
                 </>

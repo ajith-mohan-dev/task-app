@@ -22,6 +22,7 @@ import {
 } from 'react-native-table-component';
 import ToastMsg from '../../components/ToastMsg';
 import styles from './styles';
+import {LOCAL_STRING} from '../../config/local-string';
 
 type IInputState = {
   webSiteUrl: string;
@@ -92,7 +93,7 @@ const UseCaseTwoScreen: React.FC = () => {
               <TouchableOpacity
                 style={styles.buttonContainer}
                 onPress={manualUpdateHandler}>
-                <Text style={styles.buttonText}>Add</Text>
+                <Text style={styles.buttonText}>{LOCAL_STRING.Add}</Text>
               </TouchableOpacity>
             </View>
             <KeyboardAvoidingView style={{flex: 1}}>

@@ -1,3 +1,7 @@
+/**
+ * Toast Messgae
+ */
+
 import Snackbar from 'react-native-snackbar';
 
 const ToastMsg = (message = '') =>
